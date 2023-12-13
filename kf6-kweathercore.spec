@@ -44,7 +44,7 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %autosetup -p1 -n kweathercore-v%{version}
-%cmake
+%cmake -G Ninja
 
 %build
 %ninja -C build
