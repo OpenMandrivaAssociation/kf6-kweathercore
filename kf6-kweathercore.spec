@@ -53,11 +53,13 @@ Development files (Headers etc.) for %{name}.
 %install
 %ninja_install -C build
 
-%files -n %{libname}
+%find_lang kweathercore6
+
+%files -n %{libname} 
 %{_libdir}/*.so.%{major}*
 %{_libdir}/*.so.6
 
-%files -n %{devname}
+%files -n %{devname} -f kweathercore6.lang
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/cmake/*
