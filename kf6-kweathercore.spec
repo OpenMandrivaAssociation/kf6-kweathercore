@@ -61,5 +61,5 @@ Development files (Headers etc.) for %{name}.
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/cmake/*
-#{_libdir}/qt6/mkspecs/modules/*.pri
+%{_prefix}/mkspecs/modules/qt_KWeatherCore.pri
 
