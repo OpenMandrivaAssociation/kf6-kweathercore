@@ -13,6 +13,7 @@ Summary: KDE library for handling weather data
 URL: https://invent.kde.org/libraries/kweathercore
 License: GPL
 Group: System/Libraries
+BuildRequires: appstream
 BuildRequires: bison
 BuildRequires: doxygen
 BuildRequires: qt6-qttools
@@ -54,12 +55,12 @@ Development files (Headers etc.) for %{name}.
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
-%{_libdir}/*.so.5
+%{_libdir}/*.so.6
 
 %files -n %{devname}
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/cmake/*
 %{_libdir}/qt6/mkspecs/modules/*.pri
-%doc %{_docdir}/qt5/KF6KWeatherCore.qch
-%doc %{_docdir}/qt5/KF6KWeatherCore.tags
+%doc %{_docdir}/qt6/KF6KWeatherCore.qch
+%doc %{_docdir}/qt6/KF6KWeatherCore.tags
